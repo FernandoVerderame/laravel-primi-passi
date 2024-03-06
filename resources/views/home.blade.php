@@ -8,6 +8,12 @@
 </head>
 
 <body>
+    <div class="navbar">
+        @foreach ($links as $link)
+        <a href="{{ route($link) }}">{{ $link }}</a>
+        @endforeach
+    </div>
+
     <h1>Hello World!</h1>
 
     <h2>To Do List</h2>
