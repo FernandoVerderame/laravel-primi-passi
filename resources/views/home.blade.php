@@ -9,6 +9,14 @@
 
 <body>
     <h1>Hello World!</h1>
+
+    <h2>To Do List</h2>
+    @forelse ($tasks as $task)
+    <div>{{ $task }}</div>
+    @empty
+    <h3>Non ci sono tasks!</h3>
+    @endforelse
+
 </body>
 
 </html>

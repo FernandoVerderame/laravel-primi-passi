@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $tasks = ['HTML', 'CSS', 'PHP', 'JavaScript', 'Laravel', 'MySQL', 'Vue'];
+
+    return view('home', compact('tasks'));
 });
